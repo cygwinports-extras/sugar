@@ -1,0 +1,25 @@
+inherit python
+
+CATEGORY="Sugar"
+SUMMARY="Sugar Desktop shell"
+DESCRIPTION="The award-winning Sugar Learning Platform promotes
+collaborative learning through Sugar Activities that encourage critical
+thinking, the heart of a quality education. Designed from the ground up
+especially for children, Sugar offers an alternative to traditional
+office-desktop software."
+HOMEPAGE="http://www.sugarlabs.org/"
+SRC_URI="http://download.sugarlabs.org/sources/sucrose/glucose/${PN}/${P}.tar.bz2"
+
+PATCH_URI="0.96.3-gstreamer.patch
+           0.96.3-gthread.patch"
+
+# launcher dependencies
+REQUIRES="dbus run xinit xorg-server-extra"
+# desktop dependencies
+REQUIRES+=" gnome-keyring gstreamer0.10-plugins-espeak gvfs metacity telepathy-mission-control xdg-user-dirs"
+# required sugar components (glucose)
+REQUIRES+=" sugar-artwork sugar-datastore sugar-presence-service sugar-toolkit-gtk3"
+# basic activities (fructose)
+REQUIRES+=" sugar-Log"
+
+KEEP_LA_FILES="none"

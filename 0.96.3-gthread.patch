@@ -1,0 +1,13 @@
+--- origsrc/sugar-0.96.3/bin/sugar-session	2012-06-15 02:42:59.000000000 -0500
++++ src/sugar-0.96.3/bin/sugar-session	2012-08-01 01:16:00.092648500 -0500
+@@ -40,8 +40,8 @@ try:
+ except ImportError:
+     logging.debug('Could not load xklavier for keyboard configuration')
+ 
+-gtk.gdk.threads_init()
+-dbus.glib.threads_init()
++#gtk.gdk.threads_init()
++#dbus.glib.threads_init()
+ 
+ def cleanup_logs(logs_dir):
+     """Clean up the log directory, moving old logs into a numbered backup
