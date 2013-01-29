@@ -1,5 +1,8 @@
-inherit python
+inherit python gnome2
 
+NAME="sugar"
+VERSION=0.96.3
+RELEASE=2
 CATEGORY="Sugar"
 SUMMARY="Sugar Desktop shell"
 DESCRIPTION="The award-winning Sugar Learning Platform promotes
@@ -18,7 +21,7 @@ REQUIRES="dbus run xinit xorg-server-extra"
 # desktop dependencies
 REQUIRES+=" gnome-keyring gstreamer0.10-plugins-espeak gvfs metacity telepathy-mission-control xdg-user-dirs"
 # required sugar components (glucose)
-REQUIRES+=" sugar-artwork sugar-datastore sugar-presence-service sugar-toolkit-gtk3"
+REQUIRES+=" sugar-artwork sugar-datastore sugar-toolkit-gtk3"
 # basic activities (fructose)
 REQUIRES+=" sugar-Log"
 
