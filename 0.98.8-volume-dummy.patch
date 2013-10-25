@@ -4,7 +4,7 @@
  muted_changed = dispatch.Signal()
  volume_changed = dispatch.Signal()
  
--_volume = SugarExt.VolumeGStreamer()
+-_volume = SugarExt.VolumeAlsa()
 +_volume = SugarExt.VolumeDummy()
  
  
