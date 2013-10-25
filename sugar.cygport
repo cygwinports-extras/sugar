@@ -13,7 +13,6 @@ office-desktop software."
 HOMEPAGE="http://www.sugarlabs.org/"
 SRC_URI="http://download.sugarlabs.org/sources/sucrose/glucose/${PN}/${P}.tar.bz2"
 PATCH_URI="
-	0.98.8-gthread.patch
 	0.98.8-volume-dummy.patch
 "
 
