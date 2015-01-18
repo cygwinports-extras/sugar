@@ -23,7 +23,7 @@ REQUIRES="dbus-x11 run xinit xorg-server-extra"
 # GI imports
 REQUIRES+=" girepository-GConf2.0 girepository-Gst1.0 girepository-Gtk3.0 girepository-GtkSource3.0 girepository-Wnck3.0 girepository-Xkl1.0"
 # desktop dependencies
-REQUIRES+=" gnome-keyring gstreamer1.0-plugins-espeak gvfs metacity telepathy-mission-control upower xdg-user-dirs"
+REQUIRES+=" gnome-keyring gstreamer1.0-plugins-espeak gvfs metacity telepathy-mission-control xdg-user-dirs"
 # required sugar components (glucose)
 REQUIRES+=" sugar-artwork sugar-datastore"
 # basic activities (fructose)
