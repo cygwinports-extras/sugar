@@ -2,7 +2,7 @@ inherit python gnome2
 
 NAME="sugar"
 VERSION=0.98.8
-RELEASE=2
+RELEASE=3
 CATEGORY="Sugar"
 SUMMARY="Sugar Desktop shell"
 DESCRIPTION="The award-winning Sugar Learning Platform promotes
