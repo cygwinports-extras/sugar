@@ -1,8 +1,8 @@
 inherit python gnome2
 
 NAME="sugar"
-VERSION=0.98.8
-RELEASE=4
+VERSION=0.106.1
+RELEASE=1
 CATEGORY="Sugar"
 SUMMARY="Sugar Desktop shell"
 DESCRIPTION="The award-winning Sugar Learning Platform promotes
@@ -11,9 +11,9 @@ thinking, the heart of a quality education. Designed from the ground up
 especially for children, Sugar offers an alternative to traditional
 office-desktop software."
 HOMEPAGE="http://www.sugarlabs.org/"
-SRC_URI="http://download.sugarlabs.org/sources/sucrose/glucose/${PN}/${P}.tar.bz2"
+SRC_URI="http://download.sugarlabs.org/sources/sucrose/glucose/${PN}/${P}.tar.xz"
 PATCH_URI="
-	0.98.8-volume-dummy.patch
+	0.106-volume-dummy.patch
 "
 
 ARCH=noarch
@@ -25,6 +25,6 @@ REQUIRES+=" girepository-GConf2.0 girepository-Gst1.0 girepository-Gtk3.0 girepo
 # desktop dependencies
 REQUIRES+=" gnome-keyring gstreamer1.0-plugins-espeak gvfs metacity telepathy-mission-control xdg-user-dirs"
 # required sugar components (glucose)
-REQUIRES+=" sugar-artwork sugar-datastore"
+REQUIRES+=" sugar-artwork sugar-datastore sugar-runner"
 # basic activities (fructose)
 REQUIRES+=" sugar-Log"

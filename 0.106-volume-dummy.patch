@@ -1,0 +1,20 @@
+--- origsrc/sugar-0.106.1/src/jarabe/model/sound.py	2015-01-04 07:30:00.000000000 -0600
++++ src/sugar-0.106.1/src/jarabe/model/sound.py	2015-12-30 02:35:11.302303000 -0600
+@@ -30,7 +30,7 @@ _SAVE_TIMEOUT = 500
+ 
+ 
+ class PlaybackSound(object):
+-    _volume = SugarExt.VolumeAlsa.new(_PLAYBACK)
++    _volume = SugarExt.VolumeDummy.new(_PLAYBACK)
+ 
+     muted_changed = dispatch.Signal()
+     volume_changed = dispatch.Signal()
+@@ -72,7 +72,7 @@ class PlaybackSound(object):
+ 
+ 
+ class CaptureSound(object):
+-    _volume = SugarExt.VolumeAlsa.new(_CAPTURE)
++    _volume = SugarExt.VolumeDummy.new(_CAPTURE)
+ 
+     muted_changed = dispatch.Signal()
+     volume_changed = dispatch.Signal()
